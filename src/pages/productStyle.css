@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hepta Slab', serif;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.filter-section{
+    width: 20%;
+    height: 70vh;
+    margin-top: 100px;
+    /* background-color: red; */
+    padding: 3%;
+    border: 1px solid #D2D1D7;
+    border-radius: 10px;
+    overflow: hidden;
+    /* float: left; */
+}
+.filter-section>form{
+    margin-top: 30px;
+}
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.filter{
+    margin-bottom: 30px;
+}
+.filter-title{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.checkbox-container{
+    margin-left: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.checkbox-container label{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+input[type="submit"]{
+    color: #FFF;
+    width: 40%;
+    height: 2rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border: none;
+    background-color: #456AF7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover{
+    background-color: #293F94;
+}
+
+
+/* Products-section */
+.product-section{
+    margin-top: 100px;
+    width: 70%;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+}
+input[type="text"]{
+    width: 90%;
+    height: 5vh;
+    padding-left: 2%;
+    border: 1px solid #D2D1D7;
+    border-radius: 10px;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input[type="text"]::placeholder{
+    color: #D2D1D7;
+    font-size: 15px;
+    font-weight: 300;
+}
+.product-container{
+    width: 80%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 100px;
+    place-content: center;
+}
+.card-links{
+    text-decoration: none;
+}
+.cards{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid #1A1A1E;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px rgba(64, 64, 64, 0.1));
+    color: #1A1A1E;
+}
+.image{
+    width: 100%;
+    height: 70%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.card-content{
+    margin-top: 20px;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
+.card-content .name{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.price,.shipping{
+    font-size: 15px;
+    font-weight: 400;
+}
+.shipping{
+    color: #D2D1D7;
+}
